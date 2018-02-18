@@ -91,7 +91,6 @@ keyset ="""╔═════════════════
 ╠〘respon on/off〙
 ╠〘read on/off〙
 ╠〘simisimi on/off〙
-╠〘Respoto on/off〙
 ╠〘Sambut on/off〙
 ╠〘Pergi on/off〙
 ╚═════════════════
@@ -139,14 +138,11 @@ keymed ="""╔═════════════════
 ╠〘video 〙
 ╠〘/image 〙
 ╠〘/youtube 〙
-╔═════════════════
-|TEAM-BOT-adhi
-|id - line-jkp4678
 ╚═════════════════
 """
 
 mid = cl.getProfile().mid
-Bots=["uae6c6e1bcaf368c72d1e88b97d54a197"]
+Bots=["ufdb348d53532a57228f045ecfaa00f8d"]
 
 wait = {
     "likeOn":True,
@@ -512,7 +508,7 @@ def bot(op):
                  if wait["detectMention"] == True:
                      contact = cl.getContact(msg.from_)
                      cName = contact.displayName
-                     balas = ["anu Lagi Off Kalau Penting Pc Aja",cName + " tag mulu jones?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","adhi Nya lagi off", cName + " Kenapa Tag saya?","SPAM PC aja " + cName, "Jangan Suka Tag gua " + cName, "Kamu siapa " + cName + "?", "Ada Perlu apa " + cName + "?","Tenggelamkan tuh yang suka tag pake BOT","Tersummon -_-"]
+                     balas = ["Penting? ada apa anying?",cName + " tag mulu jones?",cName + " Nggak Usah Tag-Tag Anying! Kangen Pc aja","Rakha lgi off anying, Sad", cName + " Kenapa Tag saya?","SPAM PC aja " + cName, "Jangan Suka Tag gua " + cName, "Kamu siapa ?" + cName + "?", "Ada Perlu apa "]
                      ret_ = "[Auto Respond] " + random.choice(balas)
                      name = re.findall(r'@(\w+)', msg.text)
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -541,7 +537,7 @@ def bot(op):
                  if wait["kickMention"] == True:
                      contact = cl.getContact(msg.from_)
                      cName = contact.displayName
-                     balas = ["Dont Tag Me!! Im Busy",cName + " Ngapain Ngetag?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","adhi Nya lagi off", cName + " Kenapa Tag saya?","SPAM PC aja " + cName, "Jangan Suka Tag gua " + cName, "Kamu siapa " + cName + "?", "Ada Perlu apa " + cName + "?","Tenggelamkan tuh yang suka tag pake BOT","Tersummon -_-"]
+                     balas = ["Dont Tag Me!! Im Busy",cName + " Ngapain Ngetag?", cName + " Nggak Usah Tag-Tag anying! Kalo Penting Langsung Pc Aja","rakha Nya lagi off", cName + " Kenapa Tag saya?","SPAM PC aja " + cName, "Anying Jangan Suka Tag gua" + cName, "Kamu siapa " + cName + "?", "Ada Perlu apa " + cName, "Tersummon -_-"]
                      ret_ = "[Auto Respond] " + random.choice(balas)
                      name = re.findall(r'@(\w+)', msg.text)
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -723,7 +719,7 @@ def bot(op):
                 cl.sendText(msg.to, "☞「 Speed SelfBot 」\n☞ Type: Speed\n☞ Speed : %sseconds" % (elapsed_time))
             elif msg.text.lower() == 'crash':
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "uae6c6e1bcaf368c72d1e88b97d54a197',"}
+                msg.contentMetadata = {'mid': "ufdb348d53532a57228f045ecfaa00f8d',"}
                 cl.sendMessage(msg)
             elif msg.text.lower() == 'me':
                 msg.contentType = 13
@@ -754,7 +750,7 @@ def bot(op):
                         cl.sendText(msg.to,"contact di off")
                     else:
                         cl.sendText(msg.to,"contact already off")
-            elif msg.text.lower() == 'protect on':
+            elif msg.text.lower() == 'bankai on':
                 if wait["protect"] == True:
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"Protection on")
@@ -826,7 +822,7 @@ def bot(op):
                         cl.sendText(msg.to,"Autojoin off")
                     else:
                         cl.sendText(msg.to,"Autojoin already off")
-            elif msg.text.lower() == 'protect off':
+            elif msg.text.lower() == 'bankai off':
                 if wait["protect"] == False:
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"Protection off")
@@ -1263,7 +1259,7 @@ def bot(op):
                        except:
                            cl.sendText(msg.to,"Error")
             
-            elif ("Ulti " in msg.text):
+            elif ("Cero " in msg.text):
                    targets = []
                    key = eval(msg.contentMetadata["MENTION"])
                    key["MENTIONEES"] [0] ["M"]
@@ -1669,7 +1665,7 @@ def bot(op):
                  cnt.to = msg.to
                  cl.sendMessage(cnt)
 
-            elif "Intip on" == msg.text.lower():
+            elif "Monitoring on" == msg.text.lower():
                 if msg.to in wait2['readPoint']:
                         try:
                             del wait2['readPoint'][msg.to]
@@ -1701,7 +1697,7 @@ def bot(op):
                      print wait2
 
                     
-            elif "Intip off" == msg.text.lower():
+            elif "Monitoring off" == msg.text.lower():
                 if msg.to not in wait2['readPoint']:
                     cl.sendText(msg.to,"Intip already off")
                 else:
