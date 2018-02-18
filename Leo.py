@@ -21,8 +21,8 @@ else:
     import urllib.request
     import urllib.parse
 
-cl = LINETCR.LINE()
-cl.login(token="
+cl = LINETCR.LINE() #Bot Utama
+cl.login(qr=True)
 cl.loginResult()
 
 print "==[Success-Broo ]=="
