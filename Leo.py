@@ -30,12 +30,9 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 helpmsg ="""╔════════════════
-| [|My SelfBot|]
-|  key1-5
-|SelfBot Digunakan Hanya Untuk 
-|    Bermain-main
-| Jangan diperjual-belikan Script ini
-| Tanks atas pengertian nya (*_*)
+| [|♞♞♞ɆsᵽȺđȺ ŦɇȺm♞♞♞|]
+|  Gunakan Key 1-5
+|  Gunakan dengan bijak njir
 ╚════════════════════════════════
 """
 
@@ -161,9 +158,9 @@ wait = {
     'leaveRoom':False,
     'timeline':True,
     'autoAdd':True,
-    'message':"Thanks for add me ^_^",
+    'message':"Thanks njir udah nge add",
     "lang":"JP",
-    "comment":"Haii Kaka",
+    "comment":"Haii Njir",
     "commentOn":True,
     "commentBlack":{},
     "wblack":False,
